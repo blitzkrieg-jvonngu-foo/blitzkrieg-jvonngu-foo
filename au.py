@@ -23,7 +23,7 @@ except FileExistsError:
 
 with open(GREAT_LIST_PATH, 'r+') as f:
     f_content = f.read().split()
-    great_list = list(range(0, 12))
+    great_list = list(range(0, len(quotes)))
     try:
         if len(f_content) > 0:
             great_list = [int(i.strip()) for i in f_content]
