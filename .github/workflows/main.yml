@@ -1,0 +1,28 @@
+name: main
+on:
+  schedule:
+    - cron: "0 0 * * *" #runs at 00:00 UTC everyday
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner.
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8 #install the python needed
+      - name: execute py script # run the run.py to get the latest data
+        run: |
+          python au.py
+        env:
+          key: ${{ secrets.key }} # if run.py requires passwords..etc, set it as secrets
+      - name: Update README.md file.
+        run: |
+          git config --global user.email "blitzkrieg.jvonngu.foo@gmail.com"
+          git config --global user.name "blitzkrieg-jvonngu-foo"
+          git add .
+          git commit -m "Updated README.md" || echo "No changes to commit"
+          git push
