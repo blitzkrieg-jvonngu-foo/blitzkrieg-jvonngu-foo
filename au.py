@@ -39,7 +39,7 @@ with open(GREAT_LIST_PATH, 'r+') as f:
 the_quote = quotes[today_random_quote_to_show][1].center(117)
 the_author = ('--' + quotes[today_random_quote_to_show][0] + '--').center(117)
 md_file_content = '*' + the_quote.replace(' ', '&nbsp;')\
-                + '\n' + the_author.replace(' ', '&nbsp;') + '*'
+                + '\n\n' + the_author.replace(' ', '&nbsp;') + '*'
 with open(README_PATH, 'w') as f:
     f.write(md_file_content)
     f.flush()
