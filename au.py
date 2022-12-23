@@ -2,6 +2,7 @@ import random as rd
 
 GREAT_LIST_PATH = './src/great_list.txt'
 SOURCE_PATH = './src/sources.txt'
+README_PATH = './README.md'
 quotes = []
 with open(SOURCE_PATH, 'r') as f:
     lines = f.readlines()
@@ -35,13 +36,10 @@ with open(GREAT_LIST_PATH, 'r+') as f:
     f.write(' '.join(str(i) for i in great_list))
     f.flush()
 
-md_file_content = f'''
-    <p align=center>
-        <i>{quotes[today_random_quote_to_show][1]}<br>
-            --{quotes[today_random_quote_to_show][0]}--</i>
-    </p>
-'''
-with open("README.md", 'w') as f:
+the_quote = quotes[today_random_quote_to_show][1].center(117)
+the_author = quotes[today_random_quote_to_show][0].center(117)
+md_file_content = the_author.replace(' ', '&nbsp;') + '\n' + the_quote.replace(' ', '&nbsp;') 
+with open(README_PATH, 'w') as f:
     f.write(md_file_content)
     f.flush()
 
