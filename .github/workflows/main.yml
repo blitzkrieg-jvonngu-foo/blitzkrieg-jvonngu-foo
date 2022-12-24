@@ -2,7 +2,7 @@ name: main
 on:
   workflow_dispatch:
   schedule:
-    - cron: '33 4 * * *'
+    - cron: '00 6 * * *'
 
 jobs:
   build:
