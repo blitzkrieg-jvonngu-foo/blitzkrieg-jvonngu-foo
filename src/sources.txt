@@ -21,3 +21,21 @@ Benjamin Franklin: "No employment can be managed without arithmetic, no mechanic
 Johannes Kepler: "Where there is matter, there is geometry."
 
 Blaise Pascal: "It is not certain that everything is uncertain."
+
+John Forbes: “You don’t have to be a mathematician to have a feel for numbers.”
+
+Shakuntala Devi: “Without mathematics, there’s nothing you can do. Everything around you is mathematics. Everything around you is numbers.”
+
+Shakuntala Devi: “What is mathematics? It is only a systematic effort of solving puzzles posed by nature.”
+
+Sebastian Thrun: “To me, mathematics, computer science, and the arts are insanely related. They’re all creative expressions.”
+
+Katherine Johnson: “There will always be science, engineering, and technology. And there will always, always be mathematics.”
+
+Nikolai Lobachevsky: “There is no branch of mathematics, however abstract, which may not some day be applied to phenomena of the real world.”
+
+Raoul Bott: “There are two ways to do great mathematics. The first is to be smarter than everybody else. The second way is to be stupider than everybody else — but persistent.”
+
+Charles Caleb Colton: “The study of mathematics, like the Nile, begins in minuteness but ends in magnificence.”
+
+Bertrand Russell: “The pure mathematician, like the musician, is a free creator of his world of ordered beauty.”
